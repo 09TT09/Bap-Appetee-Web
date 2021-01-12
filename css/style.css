@@ -4,6 +4,9 @@ body{
     background-color: #FAFAFA;
     font-family: parisine-std, sans-serif;
 }
+html{
+    scroll-behavior: smooth;
+}
 
 a{
     text-decoration: none;
