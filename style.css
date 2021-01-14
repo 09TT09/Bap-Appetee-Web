@@ -162,7 +162,7 @@ header #frite {
 }
 
 .home article:nth-child(2) img {
-    height: 100vh;
+    height: 90%;
 }
 
 .overlay {  
@@ -217,14 +217,14 @@ header #frite {
   }
 
 /* ------------------------------------ NOTRE CONCEPT ------------------------------------ */
-.concept h1 {
+.concept h2 {
     font-size: 54px;
     font-weight: bold;
     line-height: 1.28;
     text-align: center;
 }
 
-.concept h1::after {
+.concept h2::after {
     content: ' concept';
     color: #db3427;
 }
@@ -239,13 +239,13 @@ header #frite {
     width: 20%;
 }
 
-.concept article .etape div h2 {
+.concept article .etape div h3 {
     text-align: center;
     text-decoration: 3px #db3427 underline;
     text-underline-position: under;
 }
 
-.concept h3,
+.concept h4,
 .concept p {
     text-align: center;
     max-width: 85%;
@@ -280,14 +280,14 @@ header #frite {
 
 /* ------------------------------------ Notre projet ------------------------------------ */
 
-.projet h1 {
+.projet h2 {
     text-align: center;
     font-size: 50px;
     font-weight: bold;
     line-height: 1.28;
 }
 
-.projet h1::after {
+.projet h2::after {
     content: ' projet';
     color: #db3427;
 }
@@ -306,7 +306,7 @@ header #frite {
     overflow: hidden;
 }
 
-.projet article section h2 {
+.projet article section h3 {
     text-align: center;
     font-size: 28px;
     font-weight: bold;
@@ -330,7 +330,7 @@ header #frite {
     width: 30%;
 }
 
-.projet .projetContener h3 {
+.projet .projetContener h4 {
     text-align: right;
     margin-right: 34px;
 
@@ -398,7 +398,7 @@ header #frite {
     text-align: center;
 }
 
-.tarifs h1 {
+.tarifs h2 {
     padding-top: 50px;
     font-size: 50px;
     font-weight: bold;
@@ -475,7 +475,7 @@ header #frite {
     margin: 50px 30px;
 }
 
-.affichageTarifs article h1 {
+.affichageTarifs article h2 {
     color: #db3427;
     text-align: center;
     padding: 20px 0;
@@ -484,7 +484,7 @@ header #frite {
     line-height: 1.29;
 }
 
-.affichageTarifs article h2 {
+.affichageTarifs article h3 {
     color: white;
     text-align: center;
     margin-top: -70px;
@@ -736,11 +736,16 @@ header #frite {
         margin: auto;
     }
 
+    .projet .projetContener h4{
+        text-align: center;
+        margin-right: 0;
+    }
+
     .projet .projetContener h3,
     .projet .projetContener p {
         text-align: center;
         max-width: 90%;
-        margin: 10px 0 0 0;
+        margin: 10px auto 0;
     }
 
     .projet article section:nth-child(2) {
@@ -835,6 +840,20 @@ header #frite {
 
     .tarifs_h3{
         font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .projet article section h3{
+        font-size: 20px;
+    }
+
+    .home article h1{
+        font-size: 40px;
+    }
+
+    .affichageTarifs article:nth-child(2) p{
+        font-size: 25px;
     }
 }
 

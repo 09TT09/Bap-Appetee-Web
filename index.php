@@ -65,7 +65,7 @@
         <section class="home">
             <article>
                 <div>
-                    <h1><hr />Appetee <br /></h1>
+                    <h1><hr/>Appetee <br /></h1>
                     <p>Seul ou à plusieurs, c’est l'application qui propose des recettes adaptées à vos profils alimentaires !</p>
                     <div>
                         <a href="https://www.apple.com/fr/ios/app-store/" target="_blank" rel="noopener noreferrer"><img src="img/app-store.png" alt="App store logo"/></a>
@@ -85,33 +85,33 @@
     <main>
         <section id="concept" class="concept">
             <article>
-                <h1>Notre</h1>
+                <h2>Notre</h2>
                 <section class="etape">
                     <div class="contener conteneur_anim_1">
-                        <h2>Étape 1</h2>
+                        <h3>Étape 1</h3>
                         <div>
                             <img src="img/undraw-people-tax5.png" alt="Illustration user"/>
-                            <h3>Dis-nous tes habitudes alimentaires</h3>
+                            <h4>Dis-nous tes habitudes alimentaires</h4>
                             <p>Création de ton profil alimentaire en prenant connaissance de tes goûts, allergies, intolérances et régimes alimentaires.</p>
                             <img class="contenerBg" src="img/trace-147.png" alt="Background contener" />
                         </div>
                     </div>
 
                     <div class="contener conteneur_anim_2">
-                        <h2>Étape 2</h2>
+                        <h3>Étape 2</h3>
                         <div>
                             <img src="img/undraw-eating-together-tjhx.png" alt="Illustration user" />
-                            <h3>Sélectionne qui participe au repas</h3>
+                            <h4>Sélectionne qui participe au repas</h4>
                             <p>Un repas seul, en famille ou entre amis ? Pas de problème ! Ajoute simplement leurs profils Appetee.</p>
                             <img class="contenerBg" src="img/trace-147.png" alt="Background contener" />
                         </div>
                     </div>
 
                     <div class="contener conteneur_anim_3">
-                        <h2>Étape 3</h2>
+                        <h3>Étape 3</h3>
                         <div>
                             <img src="img/undraw-breakfast-psiw.png" alt="Illustration user" />
-                            <h3>Choisis ta recette</h3>
+                            <h4>Choisis ta recette</h4>
                             <p>On te propose une liste de recettes sur mesure et adaptées à ta recherche. Trouve la recette parfaite, cuisine-la et régale-toi !</p>
                             <img class="contenerBg" src="img/trace-147.png" alt="Background contener" />
                         </div>
@@ -121,16 +121,16 @@
         </section>
 
         <section id="projet" class="projet">
-            <h1>Notre</h1>
+            <h2>Notre</h2>
             <img src="img/tomates.png" alt="tomates" id="projetBg" />
 
             <article>
                 <section>
-                    <h2>Nous voulions vous aider dans votre alimentation et ainsi vous permettre de faire des économies </h2>
+                    <h3>Nous voulions vous aider dans votre alimentation et ainsi vous permettre de faire des économies </h3>
 
                     <article class="projetContener decale">
                         <div>
-                            <h3>Partage</h3>
+                            <h4>Partage</h4>
                             <p>Partager des repas n’a jamais été aussi simple et rapide. On s’occupe de la recette, tu gères l’ambiance.</p>
                         </div>
                         <div>
@@ -140,7 +140,7 @@
 
                     <article class="projetContener">
                         <div>
-                            <h3>Accesible</h3>
+                            <h4>Accesible</h4>
                             <p>Pas d’idée pour le repas de ce soir ? Un seul et même repas pour tout le monde en 1 clic.</p>
                         </div>
                         <div>
@@ -150,7 +150,7 @@
 
                     <article class="projetContener decale">
                         <div>
-                            <h3>Adaptable</h3>
+                            <h4>Adaptable</h4>
                             <p>Seul ou à plusieurs, des recettes adaptées à tout le monde !</p>
                         </div>
                         <div>
@@ -160,7 +160,7 @@
 
                     <article class="projetContener decale2">
                         <div>
-                            <h3>Economies</h3>
+                            <h4>Economies</h4>
                             <p>Des économies pour toi et pour la planète. Prévois tes courses en planifiant ce que tu vas manger cette semaine.</p>
                         </div>
                         <div>
@@ -181,12 +181,12 @@
         </section>
 
         <section id="tarifs" class="tarifs">
-            <h1>Les tarifs</h1>
+            <h2>Les tarifs</h2>
             <p id="desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
 
             <section>
                 <article id="mensuel" class="select">
-                    <h2 class="tarifs_h3">Mensuel</h2>
+                    <h3 class="tarifs_h3">Mensuel</h3>
                     <p>Sans engagement</p>
                 </article>
 
@@ -194,7 +194,7 @@
                     <div class="promo">
                         <p>Économisez 25%</p>
                     </div>
-                    <h2 class="tarifs_h3">Trimestriel</h2>
+                    <h3 class="tarifs_h3">Trimestriel</h3>
                     <p>Engagement sur 3 mois</p>
                 </article>
 
@@ -202,7 +202,7 @@
                     <div class="promo">
                         <p>Économisez 50%</p>
                     </div>
-                    <h2 class="tarifs_h3">Annuel</h2>
+                    <h3 class="tarifs_h3">Annuel</h3>
                     <p>Engagement sur 12 mois</p>
                 </article>
             </section>
@@ -211,7 +211,7 @@
         <section class="affichageTarifs">
             <article>
                 <img id="gratuitBg" src="img/gratuitbg.png" alt="Background" />
-                <h1>Offre gratuite</h1>
+                <h2>Offre gratuite</h2>
                 <p>Des recettes adaptées à votre profil ? C’est possible avec notre offre gratuite !</p>
                 <ul>
                     <li><img src="img/ic-done-24px.png" alt="Validate" /> Quantités adaptées</li>
@@ -229,7 +229,7 @@
             <article>
                 <div>
                     <img src="img/trace-153.png" alt="Background Premium" id="premiumBg" />
-                    <h2>Premium</h2>
+                    <h3>Premium</h3>
                     <p id="price">7.99 €</p>
                 </div>
                 <ul>
@@ -411,7 +411,7 @@
         <!-- Header -->
         <div class="info_chatbot">
             <input type="button" id="closeChatbot" value="x">
-            <span class="info_titre">ChatBot Théo Rossignol</span>
+            <span class="info_titre">ChatBot</span>
         </div>
         <!-- Liste des messages -->
         <div class="liste_messages" id="listeMessages">
