@@ -50,9 +50,17 @@ a{
 
 #navbutton{
     height: 40px;
-    margin: 15px 0 0 15px;
+    margin: 35px 0 0 0px;
     display: none;
 }
+
+nav img{
+    height: 100px;
+    position: absolute;
+    top: -20px;
+    left: 50px;
+}
+
 nav ul {
     display: flex;
     justify-content: center;
@@ -624,6 +632,10 @@ header #frite {
 }
 
 @media screen and (max-width: 1000px) {
+
+    nav img{
+        display: none;
+    }
 
     header {
         padding-bottom: 20px;

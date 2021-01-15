@@ -45,20 +45,21 @@
                     <a href="#">Accueil</a>
                     <a href="#concept">Concept</a>
                     <a href="#tarifs">Tarifs</a>
-                    <a href="#">Application</a>
-                    <a href="#">Présentation de l'équipe</a>
-                    <a href="#">Contact</a>
+                    <a href="#download">Application</a>
+                    <a href="#teams">Présentation de l'équipe</a>
+                    <a href="#contact">Contact</a>
                 </div>
             </div>
             <span onclick="openNav()"><img src="img/menu-512.png" alt="Nav button" id="navbutton"></span>
 
             <ul id="nav">
+                <a href="#"><img src="img/logo.png" alt="Logo Appetee"></a>
                 <li><a href="#">Accueil</a></li>
                 <li><a href="#concept">Concept</a></li>
                 <li><a href="#tarifs">Tarifs</a></li>
-                <li><a href="#">Application</a></li>
-                <li><a href="#">Présentation de l'équipe</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="#download">Application</a></li>
+                <li><a href="#teams">Présentation de l'équipe</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
 
@@ -254,7 +255,7 @@
 
     <!--_____PARTIE_2_____-->
 
-    <section class="telecharger_appetee">
+    <section class="telecharger_appetee" id="download">
         <div class="telecharger_appetee_main_title">
             <h2><b>Télécharger Appetee</b></h2>
         </div>
@@ -271,7 +272,7 @@
         </div>
     </section><!--
     
-    --><section class="une_equipe_motivee">
+    --><section class="une_equipe_motivee" id="teams">
         <div class="une_equipe_motivee_titre">
             <h2><b>Une équipe <span>motivée</span></b></h2>
         </div>
@@ -309,7 +310,7 @@
         </div>
     </section><!--
 
-    --><section class="nous_contacter">
+    --><section class="nous_contacter" id="contact" >
 
         <div class="nous_contacter_table_cell">
             <h2>Nous Contacter</h2>
