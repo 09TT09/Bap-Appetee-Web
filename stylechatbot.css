@@ -4,19 +4,21 @@
 .button_chatbot{
     display: block;
     position: fixed;
+    justify-content: center;
+    align-items: center;
     right: 4%;
     bottom: 8%;
-    width: 50px;
-    height: 50px;
+    width: 65px;
+    height: 65px;
     border: 0;
-    border-radius: 25px;
+    border-radius: 65px;
     text-align: center;
-    background: linear-gradient(to right, #c01824, #e84432);
+    background: linear-gradient(to right, #428EFA, #144ae4);
+    /*background: linear-gradient(to right, #c01824, #e84432);*/
     color: white;
     cursor: pointer;
     font-size: 16px;
     transition: 0.25s;
-    border: 1px solid white;
 }
 
 .button_chatbot:hover{
@@ -35,6 +37,8 @@
     min-height: 405px;
     background-color: white;
     border-radius: 8px;
+    z-index: 10;
+    border-radius: 20px;
 }
 
 /* Info chatbot */
@@ -42,7 +46,10 @@
 .info_chatbot{
     height: 60px;
     width: 100%;
-    background: linear-gradient(to right, #c01824, #e84432);
+    background: linear-gradient(to right, #428EFA, #144ae4);
+    /*background: linear-gradient(to right, #c01824, #e84432);*/
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
 }
 
 .info_chatbot span{
@@ -64,6 +71,7 @@
 }
 
 .info_chatbot input:hover{
+    background-color: #144ae4;
     transform: rotate(90deg) scale(1.2,1.2);
     cursor: pointer;
 }
@@ -94,6 +102,7 @@
 
 .bot_message img{
     width: 60%;
+    height: auto;
 }
 
 .message_absolute_box_bot{
@@ -129,7 +138,8 @@
     margin-right: 60px;
     padding: 20px;
     width: calc(80% - 60px);
-    background: linear-gradient(to right, #ff9797, #ffc4bd);
+    /*background: linear-gradient(to right, #ff9797, #ffc4bd);*/
+    background: linear-gradient(to right, #bdd1ff, #9cbaff);
     border-radius: 8px;
     font-size: 0.8em; 
 }
@@ -141,7 +151,8 @@
 .separateur{
     width: 100%;
     height: 2px;
-    background: linear-gradient(to left, #c01824, #e84432);
+    /*background: linear-gradient(to left, #c01824, #e84432);*/
+    background: linear-gradient(to left, #428EFA, #144ae4);
 }
 
 /* zone réponse */
@@ -151,6 +162,8 @@
     width: 100%;
     overflow: auto;
     background-color: #f0f0f0;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 20px;
 }
 
 .flexbox{
@@ -171,7 +184,8 @@
     border: none;
     border-radius: 2px;
     font-size: 0.8em;
-    background-color: #ffc4bd;
+    /*background-color: #ffc4bd;*/
+    background-color: #bdd1ff;
     transition: 0.25s;
 }
 
@@ -187,7 +201,8 @@
     color: white;
     transition: 0.25s;
     cursor: pointer;
-    background: linear-gradient(to right, #c01824, #e84432);
+    /*background: linear-gradient(to right, #c01824, #e84432);*/
+    background: linear-gradient(to right, #428EFA, #144ae4);
 }
 
 .ouvrir_chatbot:hover{
@@ -201,7 +216,8 @@
 }
 
 .liste_messages::-webkit-scrollbar-track {
-    background: linear-gradient(to top, #c01824, #e84432);
+    /*background: linear-gradient(to top, #c01824, #e84432);*/
+    background: linear-gradient(to top, #428EFA, #144ae4);
 }
  
 .liste_messages::-webkit-scrollbar-thumb {
@@ -216,7 +232,8 @@
 }
 
 .flexbox::-webkit-scrollbar-track {
-    background: linear-gradient(to top, #e84432, #c01824);
+    /*background: linear-gradient(to top, #e84432, #c01824);*/
+    background: linear-gradient(to top, #144ae4, #428EFA);
 }
  
 .flexbox::-webkit-scrollbar-thumb {
@@ -227,7 +244,8 @@
 /* bouton d'affichage du formualaire */
 
 .button_form {
-    background: linear-gradient(to top, #e84432, #c01824);
+    /*background: linear-gradient(to top, #e84432, #c01824);*/
+    background: linear-gradient(to top, #428EFA, #144ae4);
     width: 120px;
     height: 30px;
     border: 0;
@@ -262,16 +280,16 @@
     width: 32px;
     height: 32px;
     border: 0;
-    border-right: 2px solid #e84432;
-    border-bottom: 2px solid #e84432;
+    border-right: 2px solid  #144ae4 /*#e84432*/;
+    border-bottom: 2px solid  #144ae4 /*#e84432*/;
     color: white;
-    background-color: #e84432;
+    background-color:  #144ae4 /*#e84432*/;
     transition: 0.25s;
     cursor: pointer;
 }
 
 .exit_form:hover{
-    color: #e84432;
+    color:  #144ae4 /*#e84432*/;
     background-color: white;
 }
 
@@ -304,7 +322,7 @@
     margin-top: 8px;
     display: block;
     font-size: 0.8em;
-    color: #b9000d;
+    color: #144ae4 /*#b9000d*/;
 }
 
 .input_form{
@@ -323,7 +341,8 @@
     border-radius: 50px;
     color: white;
     cursor: pointer;
-    background: linear-gradient(to right, #c01824, #e84432);
+    /*background: linear-gradient(to right, #c01824, #e84432);*/
+    background: linear-gradient(to right, #428EFA, #144ae4);
     transition: 0.25s;
 }
 

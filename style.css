@@ -1,25 +1,25 @@
 /*________________________________________________________Code_Global________________________________________________________*/
 
-html{
+html {
     scroll-behavior: smooth;
 }
 
-body{
+body {
     margin: 0;
     padding: 0;
     background-color: #FAFAFA;
     font-family: "parisine-std", sans-serif;
 }
 
-h1, h2, h3{
+h1, h2, h3 {
     font-family: "Parisine STD", sans-serif, Arial, sans-serif;
 }
 
-p{
+p {
     font-family: "MontSerrat", sans-serif, Arial, sans-serif;
 }
 
-a{
+a {
     text-decoration: none;
     color: black;
 }
@@ -48,17 +48,31 @@ a{
 
 /* ------------------------------------ HEADER ------------------------------------ */
 
-#navbutton{
-    height: 40px;
-    margin: 35px 0 0 0px;
+.div_logo_appetee_mobile {
+    width: 100%;
+    height: auto;
+    text-align: center;
     display: none;
 }
 
-nav img{
-    height: 100px;
-    position: absolute;
-    top: -20px;
-    left: 50px;
+.logo_appetee_mobile {
+    margin: auto;
+    margin-top: 100px;
+    width: 110px;
+    height: auto;
+}
+
+#navbutton {
+    height: 60px;
+    width: auto;
+    margin: 15px 0 0 15px;
+    display: none;
+    transition: 0.25s;
+    cursor: pointer;
+}
+
+#navbutton:hover{
+    transform: scale(1.2,1.2);
 }
 
 nav ul {
@@ -81,10 +95,16 @@ nav ul li:hover {
     transform: scale(1.1,1.1);
 }
 
-nav ul li a:hover{
+nav ul li a:hover {
     transition: 0.1s;
-    color: #db3427;
+    color: #94c942;
 }
+
+#nav img {
+    width: 100px;
+    height: auto;
+}
+
 header {
     position: relative;
     padding-bottom: 300px;
@@ -161,6 +181,7 @@ header #frite {
 
 .home article div div img {
     width: 180px;
+    height: auto;
     margin: 0 10px 0 0;
     transition: 0.25s;
 }
@@ -170,7 +191,8 @@ header #frite {
 }
 
 .home article:nth-child(2) img {
-    height: 90%;
+    height: 100vh;
+    width: auto;
 }
 
 .overlay {  
@@ -184,6 +206,7 @@ header #frite {
     background-color: rgba(0,0,0, 0.9);
     overflow-x: hidden;
     transition: 0.5s;
+    z-index: 20;
   }
   
   .overlay-content {
@@ -272,6 +295,7 @@ header #frite {
 
 .contener div img {
     width: 100%;
+    height: auto;
 }
 
 .contener div .contenerBg {
@@ -312,6 +336,12 @@ header #frite {
 
 .projet article section:nth-child(2) {
     overflow: hidden;
+    z-index: -5;
+}
+
+.img_pizza {
+    width: 200%;
+    height: auto;
 }
 
 .projet article section h3 {
@@ -391,6 +421,7 @@ header #frite {
 #app img {
     margin: 0 10px 0 0;
     width: 180px;
+    height: auto;
     transition: 0.25s;
 }
 
@@ -462,7 +493,7 @@ header #frite {
     color: #ffffff;
 }
 
-#annuel, #trimestriel, #mensuel{
+#annuel, #trimestriel, #mensuel {
     cursor: pointer;
 }
 
@@ -479,8 +510,8 @@ header #frite {
     padding: 60px;
     position: relative;
     height: 100%;
-
     margin: 50px 30px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .affichageTarifs article h2 {
@@ -503,11 +534,11 @@ header #frite {
     z-index: 2;
 }
 
-.affichageTarifs article:nth-child(2) div{
+.affichageTarifs article:nth-child(2) div {
     display: block;
 }
 
-.affichageTarifs article:nth-child(2) .flex{
+.affichageTarifs article:nth-child(2) .flex {
     display: flex;
 }
 
@@ -524,7 +555,7 @@ header #frite {
     font-family: parisine-std, sans-serif;
 }
 
-.affichageTarifs article:nth-child(2) p::after{
+.affichageTarifs article:nth-child(2) p::after {
     content: ' /mois';
     font-size: 20px;
 }
@@ -541,19 +572,19 @@ header #frite {
     z-index: 2;
 }
 
-.affichageTarifs article ul li{
+.affichageTarifs article ul li {
     display: flex;
     align-items: center;
     margin: 15px 0;
     font-family: Montserrat;
     font-size: 14px;
-
     position: relative;
     z-index: 2;
 }
 
 .affichageTarifs article ul li img {
     width: 8%;
+    height: auto;
     padding: 10px 20px 10px 10px;
     position: relative;
     z-index: 2;
@@ -573,21 +604,21 @@ header #frite {
     transform: scale(1.05,1.05);
 }
 
-.affichageTarifs article div{
+.affichageTarifs article div {
     margin-top: 50px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-#gratuitBg{
+#gratuitBg {
     top: 0;
     left: 0;
     position: absolute;
     width: 43%;
 }
 
-#premiumBg{
+#premiumBg {
     top: 0;
     left: 0;
     position: absolute;
@@ -595,26 +626,26 @@ header #frite {
     z-index: 0;
 }
 
-#redButton{
+#redButton {
     background-color: #db3427;
     color: white;
 }
 
 /* ------------------------------------ RESPONSIVE ------------------------------------ */
 @media screen and (max-width: 1700px) {
-    .affichageTarifs article:nth-child(2) p{
+    .affichageTarifs article:nth-child(2) p {
         font-size: 60px;
         margin-bottom: 150px;
     }
 
-    #annuel, #trimestriel, #mensuel{
+    #annuel, #trimestriel, #mensuel {
         width: 30%;
     }
 
 }
 
 @media screen and (max-width: 1450px) {
-    .affichageTarifs article:nth-child(2) p{
+    .affichageTarifs article:nth-child(2) p {
         font-size: 40px;
         margin-bottom: 120px;
     }
@@ -633,15 +664,11 @@ header #frite {
 
 @media screen and (max-width: 1000px) {
 
-    nav img{
-        display: none;
-    }
-
     header {
         padding-bottom: 20px;
     }
 
-    .affichageTarifs article:nth-child(2) p{
+    .affichageTarifs article:nth-child(2) p {
         font-size: 30px;
         margin-bottom: 100px;
     }
@@ -678,34 +705,45 @@ header #frite {
 
 @media screen and (max-width: 800px) {
 
-    .affichageTarifs{
+    .div_logo_appetee_mobile {
+        display: block;
+    }
+    
+    .affichageTarifs {
         display: block;
     }
 
-    .affichageTarifs article{
+    .affichageTarifs article {
         width: 60%;
         margin: 50px auto;
     }
 
-    .affichageTarifs article:nth-child(2) p{
+    .affichageTarifs article:nth-child(2) p {
         font-size: 70px;
         text-align: center;
         margin-bottom: 200px;
     }
 
-    #navbutton{
+    #navbutton {
         display: block;
+        position: fixed;
+        z-index: 3;
     }
-    #nav{
+    #nav {
         display: none;
     }
     #headerBg {
         display: none;
     }
 
+    .projet .projetContener h4{
+        text-align: center;
+        margin-right: 0;
+    }
+
     .home {
         flex-direction: column;
-        margin-top: 40px;
+        margin-top: 0px;
     }
 
     .home article {
@@ -748,11 +786,6 @@ header #frite {
         margin: auto;
     }
 
-    .projet .projetContener h4{
-        text-align: center;
-        margin-right: 0;
-    }
-
     .projet .projetContener h3,
     .projet .projetContener p {
         text-align: center;
@@ -767,15 +800,15 @@ header #frite {
 
 @media screen and (max-width: 610px) {
 
-    .tarifs section article p{
+    .tarifs section article p {
         font-size: 14px;
     }
 
-    #desc{
+    #desc {
         max-width: 80%;
         margin: auto;
     }
-    .affichageTarifs article:nth-child(2) p{
+    .affichageTarifs article:nth-child(2) p {
         font-size: 50px;
         margin-bottom: 150px;
     }
@@ -785,18 +818,18 @@ header #frite {
         width: 85%;
     }
 
-    .tarifs section .promo p{
+    .tarifs section .promo p {
         font-size: 11px;
     }
 }
 
 @media screen and (max-width: 420px) {
 
-    .tarifs section article p{
+    .tarifs section article p {
         font-size: 12px;
     }
 
-    .affichageTarifs article:nth-child(2) p{
+    .affichageTarifs article:nth-child(2) p {
         font-size: 35px;
         margin-bottom: 100px;
     }
@@ -811,6 +844,7 @@ header #frite {
 
     .home article p {
         padding-bottom: 30px;
+        margin-bottom: 30px;
     }
 
     .home article div div {
@@ -850,8 +884,22 @@ header #frite {
         margin: 20px;
     }
 
-    .tarifs_h3{
+    .tarifs_h3 {
         font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 300px) {
+
+    #premiumBg {
+        display: none;
+    }
+
+    .affichageTarifs article h2, #price {
+        color: #db3427;
+        text-align: center;
+        margin: 10px;
+        padding: 0;
     }
 }
 
@@ -866,20 +914,6 @@ header #frite {
 
     .affichageTarifs article:nth-child(2) p{
         font-size: 25px;
-    }
-}
-
-@media screen and (max-width: 300px) {
-
-    #premiumBg{
-        display: none;
-    }
-
-    .affichageTarifs article h2, #price{
-        color: #db3427;
-        text-align: center;
-        margin: 10px;
-        padding: 0;
     }
 }
 
@@ -906,25 +940,25 @@ header #frite {
 
 /*_______________________________________________Section : telecharger appetee_______________________________________________*/
 
-.telecharger_appetee{
+.telecharger_appetee {
     width: 100%;
     height: 792px;
     background-color: #F7A224;
 }
 
-.telecharger_appetee_main_title{
+.telecharger_appetee_main_title {
     width: 100%;
     height: 140px;
 }
 
-.telecharger_appetee_main_title h2{
+.telecharger_appetee_main_title h2 {
     text-align: center;
     margin: 0;
     line-height: 140px;
     font-size: 48px;
 }
 
-.telecharger_appetee_flexbox{
+.telecharger_appetee_flexbox {
     width: 100%;
     height: calc( 792px - 240px );
     display: flex;
@@ -932,110 +966,51 @@ header #frite {
     justify-content: center;
 }
 
-.tel_app_img{
+.tel_app_img {
     width: 350px;
     height: auto;
     transition: 1s;
 }
 
-.tel_app_img:hover{
+.tel_app_img:hover {
     transform: scale(1.1,1.1);
 }
 
-.blank_div{
+.blank_div {
     height: 1px;
-    width: 15%;
+    width: 10%;
 }
 
-.telecharger_appetee_div_text{
+.telecharger_appetee_div_text {
     margin-bottom: 100px;
     margin-left: 10%;
-    width: 30%;
+    width: 40%;
     min-width: 310px;
 }
 
-.telecharger_appetee_div_text h3{
+.telecharger_appetee_div_text h3 {
     margin: 0;
     color: white;
     font-size: 42px;
 }
 
-.telecharger_appetee_div_text img{
+.telecharger_appetee_div_text img {
     margin: 5px;
     margin-top: 40px;
-    width: 150px;
+    width: 180px;
     height: auto;
     transition: 0.25s;
 }
 
-.telecharger_appetee_div_text img:hover{
+.telecharger_appetee_div_text img:hover {
     transform: scale(1.1,1.1);
 }
 
-/*_______________________________________________Equipe_______________________________________________*/
-
-.une_equipe_motivee{
-    width: 100%;
-    height: 1235px;
-    background-color: #ececec;
-    background-image: url("img/fond_equipe.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-
-.une_equipe_motivee_titre{
-    height: 80px;
-    width: 100%;
-    text-align: center;
-}
-
-.une_equipe_motivee_titre h2{
-    margin: 0;
-    padding-top: 60px;
-    font-size: 40px;
-}
-
-.une_equipe_motivee_titre span{
-    color: #DB3427;
-}
-
-.une_equipe_motivee_table{
-    display: table;
-    width: 100%;
-    height: calc( 1235px - 80px );
-}
-
-.equipe_div_img_1{
-    display: table-cell;
-    height: 100%;
-    width: 35%;
-    text-align: center;
-}
-
-.equipe_div_text{
-    display: table-cell;
-    height: 100%;
-    width: 30%;
-    vertical-align: middle;
-    text-align: center;
-}
-
-.equipe_div_text h3, .equipe_div_text_2 h3{
-    font-size: 24px;
-    font-family: "Parisine STD", sans-serif, Arial, sans-serif;
-}
-
-.equipe_div_text p, .equipe_div_text_2 p{
-    font-family: "MontSerrat", sans-serif, Arial, sans-serif;
-    text-align: left;
-    font-size: 18px;
-}
-
-.equipe_div_text_button{
+.appli_submit {
+    display: inline-block;
     width: 150px;
     height: 35px;
-    margin-top: 20px;
-    margin-bottom: 100px;
+    margin: 30px 0px 20px 0px;
     border: 0;
     border-radius: 30px;
     background-color: #94C942;
@@ -1047,45 +1022,138 @@ header #frite {
     font-size: 15px;
 }
 
-.equipe_div_text_button:hover{
+.appli_submit:hover {
     transform: scale(1.1,1.1);
 }
 
-.equipe_div_img_2{
-    display: table-cell;
-    height: 100%;
-    width: 35%;
-    text-align: center;
-    vertical-align: bottom;
+.appli_input {
+    display: inline-block;
+    width: 200px;
+    height: 35px;
+    border: 0;
+    border-radius: 30px;
+    padding: 0 5px;
+    margin: 0 5px;
+    font-weight: bolder;
+    font-size: 15px;
 }
 
-.equipe_div_img_1 img, .equipe_div_img_2 img{
-    border-radius: 50px;
+/*_______________________________________________Equipe_______________________________________________*/
+
+.une_equipe_motivee {
+    width: 100%;
+    height: auto;
+    background-color: #ececec;
+    background-image: url("img/fond_equipe.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.une_equipe_motivee .une_equipe_motivee_titre {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 120px;
+    width: 100%;
+    text-align: center;
+}
+
+.une_equipe_motivee .une_equipe_motivee_titre h2 {
+    margin: 0;
+    font-size: 40px;
+}
+
+.une_equipe_motivee .une_equipe_motivee_titre span {
+    color: #DB3427;
+}
+
+.une_equipe_motivee h3 {
+    margin: 0;
+    font-size: 24px;
+}
+
+.une_equipe_motivee .une_equipe_motivee_table {
+    display: table;
+    width: 100%;
+    height: auto;
+    margin: 100px 0;
+}
+
+.une_equipe_motivee .une_equipe_motivee_cell_img {
+    display: table-cell;
+    width: 45%;
+    height: auto;
+    text-align: right;
+}
+
+.une_equipe_motivee .une_equipe_motivee_cell_text {
+    display: table-cell;
+    width: 45%;
+    height: auto;
+    vertical-align: middle;
+}
+
+.une_equipe_motivee .une_equipe_motivee_cell_img_2 {
+    display: table-cell;
+    width: 45%;
     height: auto;
 }
 
-.equipe_div_img_1 img{
-    margin-top: 200px;
+.une_equipe_motivee .une_equipe_motivee_cell_text_2 {
+    display: table-cell;
+    width: 45%;
+    height: auto;
+    text-align: right;
+    vertical-align: middle;
 }
 
-.equipe_div_img_2 img{
-    margin-bottom: 50px;
+.une_equipe_motivee .une_equipe_motivee_cell_img img, .une_equipe_motivee_cell_img_2 img {
+    width: 300px;
+    height: auto;
+    vertical-align: middle;
+    border-radius: 20px;
+    box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.3);
 }
 
-.equipe_div_text_div_margin_top{
-    margin-top: 60px;
+.une_equipe_motivee .div_espace {
+    display: table-cell;
+    width: 10%;
+}
+
+.une_equipe_motivee .equipe_div_text_button {
+    width: 150px;
+    height: 35px;
+    margin-top: 20px;
+    border: 0;
+    border-radius: 30px;
+    background-color: #94C942;
+    color: white;
+    cursor: pointer;
+    transition: 0.25s;
+    font-family: "Parisine STD", sans-serif, Arial, sans-serif;
+    font-weight: bolder;
+    font-size: 15px;
+}
+
+.une_equipe_motivee .equipe_div_text_button:hover {
+    transform: scale(1.1,1.1);
+}
+
+.une_equipe_motivee .no_margin {
+    margin: 0;
+    padding-bottom: 70px;
 }
 
 /*_______________________________________________nous contacter_______________________________________________*/
 
-.nous_contacter{
+.nous_contacter {
     display: table;
     width: 100%;
     height: auto;
     background-color: #ececec;
 }
 
-.nous_contacter_table_cell{
+.nous_contacter_table_cell {
     display: table-cell;
     width: 40%;
     height: 100%;
@@ -1093,23 +1161,23 @@ header #frite {
     vertical-align: middle;
 }
 
-.nous_contacter_table_cell h2{
+.nous_contacter_table_cell h2 {
     color: #94C942;
 }
 
-.nous_contacter_table_cell p{
+.nous_contacter_table_cell p {
     font-size: 28px;
     font-family: "Parisine STD", sans-serif, Arial, sans-serif;
 }
 
-.nous_contacter_table_cell_2{
+.nous_contacter_table_cell_2 {
     display: table-cell;
     width: 60%;
     height: 792px;
     vertical-align: middle;
 }
 
-.div_formulaire{
+.div_formulaire {
     width: 65%;
     height: 90%;
     margin: auto;
@@ -1118,27 +1186,27 @@ header #frite {
     box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1), -2px 2px 2px rgba(0, 0, 0, 0.1);
 }
 
-.div_formulaire h3{
+.div_formulaire h3 {
     padding-top: 50px;
     text-align: center;
 }
 
-.div_formulaire_section{
+.div_formulaire_section {
     width: 80%;
     margin: auto;
     margin-top: 30px;
 }
 
-.div_formulaire_label{
+.div_formulaire_label {
     display: block;
     font-family: "Parisine STD", sans-serif, Arial, sans-serif;
 }
 
-.div_formulaire_label span{
+.div_formulaire_label span {
     color: #DB3427;
 }
 
-.div_formulaire_input{
+.div_formulaire_input {
     width: 100%;
     margin-top: 20px;
     padding: 8px 5px;
@@ -1147,20 +1215,20 @@ header #frite {
     font-family: "MontSerrat", sans-serif, Arial, sans-serif;
 }
 
-.div_formulaire_input::placeholder{
+.div_formulaire_input::placeholder {
     color: #c5c5c5;
 }
 
-.div_formulaire_section_margin{
+.div_formulaire_section_margin {
     margin-top: 70px;
 }
 
-.center_button_submit_form{
+.center_button_submit_form {
     margin: auto;
     text-align: center;
 }
 
-.button_submit_form{
+.button_submit_form {
     width: 150px;
     height: 35px;
     margin-top: 70px;
@@ -1175,23 +1243,23 @@ header #frite {
     font-size: 15px;
 }
 
-.button_submit_form:hover{
+.button_submit_form:hover {
     transform: scale(1.1,1.1);
 }
 
 /*_______________________________________________Footer_______________________________________________*/
 
-footer{
+footer {
     width: 100%;
     background-color: #DB3427;
     padding-bottom: 30px;
 }
 
-.footer_div_global_infos a{
+.footer_div_global_infos a {
     text-decoration: none;
 }
 
-.footer_text_div h3{
+.footer_text_div h3 {
     color: white;
     padding-top: 50px;
     margin: 0;
@@ -1199,7 +1267,7 @@ footer{
     margin-left: 8%;
 }
 
-.footer_div_global_infos{
+.footer_div_global_infos {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -1207,7 +1275,7 @@ footer{
     width: 100%;
 }
 
-.footer_div_infos{
+.footer_div_infos {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -1220,30 +1288,30 @@ footer{
     transition: 0.25s;
 }
 
-.footer_div_infos:hover{
+.footer_div_infos:hover {
     transform: scale(1.05,1.05);
 }
 
-.footer_div_infos img{
+.footer_div_infos img {
     width: 100px;
     height: auto;
     padding: 20px;
 }
 
-.footer_div_infos p{
+.footer_div_infos p {
     font-family: "Parisine STD", sans-serif, Arial, sans-serif;
     margin: 0;
     color: #000000;
     font-size: 16px;
 }
 
-.footer_text2_div h3{
+.footer_text2_div h3 {
     padding-top: 20px;
     margin-left: 8%;
     color: white;
 }
 
-.footer_text2_div a{
+.footer_text2_div a {
     padding-top: 20px;
     margin-left: 12%;
     font-family: "MontSerrat", sans-serif, Arial, sans-serif;
@@ -1252,24 +1320,24 @@ footer{
     transition: 0.25s;
 }
 
-.footer_text2_div a:hover{
+.footer_text2_div a:hover {
    font-size: 18px;
 }
 
-.footer_div_infos_div_img{
+.footer_div_infos_div_img {
     width: 60%;
     text-align: center;
 }
 
-.footer_div_infos_div_text{
+.footer_div_infos_div_text {
     width: 40%;
 }
 
 /*________________________________________________________________________________________*/
 
-@media screen and (max-width:1340px){
+@media screen and (max-width:1340px) {
 
-    .telecharger_appetee_div_text{
+    .telecharger_appetee_div_text {
         width: 50%;
     }
 
@@ -1282,141 +1350,61 @@ footer{
 
 /*________________________________________________________________________________________*/
 
-@media screen and (max-width:1200px){
+@media screen and (max-width:1150px) {
 
-    .equipe_div_img_1, .equipe_div_text, .equipe_div_img_2{
-        width: 25%;
-    }
-
-    .equipe_div_img_1 img{
-        width:250px;
-    }
-
-    .equipe_div_img_2 img{
-        width:250px;
-    }
-
-}
-
-/*________________________________________________________________________________________*/
-
-@media screen and (max-width:1150px){
-
-    .une_equipe_motivee {
-        height: auto;
-    }
-
-    .une_equipe_motivee_titre {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        height: 120px;
-    }
-
-    .une_equipe_motivee_titre h2 {
-        padding-top: 0;
-    }
-
-    .une_equipe_motivee_table{
-        display: flex;
-        flex-wrap: wrap;
-        margin-top: 50px;
-        width: 100%;
-        height: auto;
-    }
-
-    .equipe_div_img_1{
-        display: block;
-        width: 50%;
-        height: auto;
-        order: 0;
-    }
-    
-    .equipe_div_text{
-        display: block;
-        height: auto;
-        width: 100%;
-        order: 2;
-    }
-
-    .equipe_div_img_2{
-        display: block;
-        height: auto;
-        width: 50%;
-        order: 1;
-    }
-
-    .equipe_div_text_div_margin_top{
-        margin-top: 0;
-    }
-
-    .equipe_div_img_1 img {
-        margin-top: 0;
-    }
-
-    .equipe_div_img_2 img {
-        margin-bottom: 0px;
-    }
-
-    .div_formulaire{
+    .div_formulaire {
         width: 90%;
     }
 
-    .equipe_div_text_adaptatif{
-        display: inline-block;
-        width: 40%;
-        padding: 30px;
-    }
-
 }
 
 /*________________________________________________________________________________________*/
 
-@media screen and (max-width:1000px){
+@media screen and (max-width:1000px) {
 
-    .telecharger_appetee{
+    .telecharger_appetee {
         height: auto;
     }
 
-    .telecharger_appetee_main_title h2{
+    .telecharger_appetee_main_title h2 {
         text-align: center;
         margin: 0;
         line-height: 140px;
     }
 
-    .telecharger_appetee_div_text h3{
+    .telecharger_appetee_div_text h3 {
         margin: 0;
         color: white;
         font-size: 22px;
     }
 
-    .footer_text_div h3{
+    .footer_text_div h3 {
         margin-left: 0%;
         text-align: center;
         font-size: 18px;
     }
 
-    .footer_text2_div h3{
+    .footer_text2_div h3 {
         padding-top: 20px;
         margin-left: 0;
         text-align: center;
         font-size: 18px;
     }
 
-    .telecharger_appetee_flexbox{
+    .telecharger_appetee_flexbox {
         height: auto;
         display: block;
         text-align: center;
         padding-bottom: 30px;
     }
 
-    .telecharger_appetee_div_text{
+    .telecharger_appetee_div_text {
         margin: auto;
         margin-top: 30px;
         width: 60%;
     }
 
-    .telecharger_appetee_div_text img{
+    .telecharger_appetee_div_text img {
         margin: 5px;
         margin-top: 10px;
         width: 150px;
@@ -1432,7 +1420,7 @@ footer{
         width: 0;
     }
 
-    footer{
+    footer {
         height: auto;
     }
 
@@ -1440,25 +1428,25 @@ footer{
 
 /*________________________________________________________________________________________*/
 
-@media screen and (max-width:880px){
+@media screen and (max-width:880px) {
 
-    .nous_contacter{
+    .nous_contacter {
         display: block;
     }
 
-    .nous_contacter_table_cell{
+    .nous_contacter_table_cell {
         display: block;
         width: 100%;
         height: auto;
     }
     
-    .nous_contacter_table_cell_2{
+    .nous_contacter_table_cell_2 {
         display: block;
         width: 100%;
         height: 792px;
     }
 
-    .div_formulaire{
+    .div_formulaire {
         margin-top: 60px;
         width: 70%;
     }
@@ -1470,91 +1458,129 @@ footer{
 
 }
 
-/*________________________________________________________________________________________*/
+@media screen and (max-width:800px) {
 
-.equipe_div_text_2{
-    display: none;
-    height: auto;
-    width: 100%;
-    margin: auto;
-    order: 4;
+    .telecharger_appetee_div_text {
+        width: 80%;
+    }
+
+    .appli_input {
+        display: block;
+        margin: 20px auto;
+    }
+
+    .appli_submit {
+        margin: 10px 0 50px 0;
+    }
+
 }
 
-@media screen and (max-width:750px){
+@media screen and (max-width:750px) {
 
-    .equipe_div_img_1{
-        width: 100%;
-        order: 0;
-    }
-    
-    .equipe_div_text{
-        order: 1;
-    }
-
-    .equipe_div_img_2{
-        width: 100%;
-        order: 2;
-    }
-
-    .equipe_div_text_button {
-        margin-bottom: 50px;
-    }
-
-    .equipe_div_text_div_margin_top {
-        display: none;
-    }
-
-    .equipe_div_text_2{
+    .une_equipe_motivee .une_equipe_motivee_table, .une_equipe_motivee_table {
         display: block;
     }
 
-    .equipe_div_text_adaptatif{
-        width: 60%;
-        padding: 30px;
+    .une_equipe_motivee .une_equipe_motivee_cell_img, .une_equipe_motivee .une_equipe_motivee_cell_img_2 {
+        display: block;
+        width: 100%;
+        margin: auto;
+        margin-bottom: 50px;
+        text-align: center;
     }
 
-    .equipe_div_text_adaptatif_2{
-        width: 60%;
-        padding: 30px;
-        text-align: center;
+    .une_equipe_motivee .une_equipe_motivee_cell_text {
+        display: block;
+        width: 80%;
         margin: auto;
+        margin-bottom: 50px;
+    }
+
+    .une_equipe_motivee .une_equipe_motivee_cell_text_2 {
+        display: block;
+        width: 80%;
+        margin: auto;
+        margin-bottom: 50px;
+        text-align: left;
+        order: 2;
+    }
+
+    .une_equipe_motivee .une_equipe_motivee_cell_text h3, .une_equipe_motivee_cell_text_2 h3 {
+        text-align: center;
+        font-size: 20px;
+        order: 1;
+    }
+
+    .une_equipe_motivee .flex_mobile{
+        display: flex;
+        flex-direction: column;
+        width: 100% ;
     }
 
 }
 
 /*________________________________________________________________________________________*/
 
-@media screen and (max-width:500px){
+@media screen and (max-width:500px) {
 
-    .div_formulaire{
+    .div_formulaire {
         width: 95%;
     }
 
-    .equipe_div_text_adaptatif{
-        width: 80%;
-        padding: 10px;
-    }
-
-    .une_equipe_motivee_table {
-        margin-top: 0;
-    }
-
-    .equipe_div_text_adaptatif_2{
-        width: 80%;
-        padding: 10px;
-        text-align: center;
-        margin: auto;
-    }
-
-    .une_equipe_motivee_titre h2{
-        font-size: 26px;
-    }
-
-    .telecharger_appetee_main_title h2{
+    .telecharger_appetee_main_title h2 {
         text-align: center;
         margin: 0;
         line-height: 140px;
-        font-size: 26px;
+        font-size: 30px;
+    }
+
+    .une_equipe_motivee .une_equipe_motivee_titre h2 {
+        font-size: 30px;
+    }
+
+    .affichageTarifs article h2 {
+        font-size: 30px;
+    }
+
+    .tarifs h2 {
+        font-size: 30px;
+    }
+
+    .projet h2 {
+        font-size: 30px;
+    }
+
+    .projet article section h3 {
+        font-size: 24px;
+    }
+
+    .projet .projetContener h4 {
+        font-size: 28px;
+    }
+
+    .projet .projetContener div:nth-child(1) {
+        width: 90%;
+    }
+
+    .home article h1 {
+        font-size: 30px;
+    }
+
+    .concept h2 {
+        font-size: 30px;
+    }
+
+    .projet .projetContener h3, .projet .projetContener p {
+        margin: auto auto 20px auto;
+    }
+
+    .nous_contacter_table_cell p {
+        font-size: 24px;
+    }
+
+    .button_chatbot {
+        width: 50px !important;
+        height: 50px !important;
     }
 
 }

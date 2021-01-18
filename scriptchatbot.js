@@ -17,7 +17,7 @@ const botResponse = [
   'Pour créer un compte, il vous suffit d\'aller sur l\'application Appetee et de rentrer votre email ainsi qu\'un mot de Passe...',
   'L\'entreprise Appetee à été fondée en ... par ... et se spécialise dans ...',
   /*'Ce service coûte ...',*/
-  'Vous pouvez poser votre question directement via Messenger (lien messenger Appetee) ou envoyer un mail à l\'adresse <span style="color:#c01824">appetee.app@gmail.com</span><br><br>Vous pouvez aussi remplir un formulaire ici : <br><br><button onclick="ouvrirFormulaire()" class="button_form">Formulaire</button>',
+  'Vous pouvez poser votre question directement via Messenger (lien messenger Appetee) ou envoyer un mail à l\'adresse <span style="color:#144ae4">appetee.app@gmail.com</span><br><br>Vous pouvez aussi remplir un formulaire ici : <br><br><button onclick="ouvrirFormulaire()" class="button_form">Formulaire</button>',
 ]
 
 let getNumberButtonClick = 0;
@@ -87,7 +87,7 @@ function showMessage(){
     document.getElementsByClassName('bouton_reponse')[i].addEventListener('click', function(e) {
       document.getElementById("listeMessages").insertAdjacentHTML(
       'beforeend',
-      '<div class="message user_message"><div class="message_text_user"><p>' + document.getElementsByClassName('bouton_reponse')[i].value + '</p></div><div class="message_absolute_box_user"><div class="message_absolute_box_flexbox"><img src="img/user-redim.png" alt="Logo utilisateur"></div></div></div>'
+      '<div class="message user_message"><div class="message_text_user"><p>' + document.getElementsByClassName('bouton_reponse')[i].value + '</p></div><div class="message_absolute_box_user"><div class="message_absolute_box_flexbox"><img src="img/user-redim-blue.png" alt="Logo utilisateur"></div></div></div>'
       );
       document.getElementsByClassName('message')[document.getElementsByClassName('message').length - 1].scrollIntoView({behavior: "smooth"});
       getNumberButtonClick = i;
@@ -111,12 +111,12 @@ function AutomaticResponse() {
   setTimeout(function(){
     document.getElementById("listeMessages").insertAdjacentHTML(
       'beforeend',
-      '<div class="message bot_message"><div class="message_absolute_box_bot"><div class="message_absolute_box_flexbox"><img src="img/appetee-logo-redim.png" alt="Logo robot"></div></div><div class="message_text_bot"><p>' + botResponse[getNumberButtonClick] + '</p></div></div>'
+      '<div class="message bot_message"><div class="message_absolute_box_bot"><div class="message_absolute_box_flexbox"><img src="img/chatbot-logo.png" alt="Logo robot"></div></div><div class="message_text_bot"><p>' + botResponse[getNumberButtonClick] + '</p></div></div>'
     );
     document.getElementsByClassName('message')[document.getElementsByClassName('message').length - 1].scrollIntoView({behavior: "smooth"});
     for (let i = 0; i < botResponse.length; i++) {
       document.getElementsByClassName("bouton_reponse")[i].style.pointerEvents = 'auto';
-      document.getElementsByClassName("bouton_reponse")[i].style.background = 'linear-gradient(to right, #ff9797, #ffc4bd)';
+      document.getElementsByClassName("bouton_reponse")[i].style.background = 'linear-gradient(to right, #bdd1ff, #9cbaff)';
       document.getElementById("flexbox").style.overflowY = 'auto';
     }
   }, 1000);
